@@ -10,17 +10,10 @@ module.exports = {
     username: {
       type: 'string',
     },
-    clientid: {
+    password: {
       type: 'string',
     },
-    publish: {
-      type: 'array',
-    },
-    subscribe: {
-      type: 'array',
-    },
-    pubsub: {
-      type: 'array',
-    },
-  }
+    is_admin: {
+      type: 'boolean',
+    }
 };

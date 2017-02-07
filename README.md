@@ -7,7 +7,8 @@ To set up a local development environment, make sure you have Sails installed gl
 
 1. Clone this repository
 2. Open the repository directory in your terminal
-3. Run the following command, which creates an admin user:
+3. Update PostgreSQL credentials in `config/connections.js`
+4. Run the following command, which creates an admin user:
 
 ```
 sails_permissions__adminUsername="admin" sails_permissions__adminPassword="test12345" sails lift

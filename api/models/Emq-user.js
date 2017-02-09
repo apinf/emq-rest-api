@@ -9,6 +9,7 @@ module.exports = {
   attributes: {
     username: {
       type: 'string',
+      unique: true,
     },
     password: {
       type: 'string',
@@ -16,4 +17,5 @@ module.exports = {
     is_admin: {
       type: 'boolean',
     }
+  }
 };

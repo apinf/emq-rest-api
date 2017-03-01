@@ -7,20 +7,27 @@
 
 module.exports = {
   attributes: {
+    allow: {
+      type: 'integer',
+    },
+    ipaddr: {
+      type: 'string',
+      size: 60
+    },
     username: {
       type: 'string',
+      size: 100
     },
-    clientid: {
+    clientId: {
       type: 'string',
+      size: 100
     },
-    publish: {
-      type: 'array',
+    access: {
+      type: 'integer'
     },
-    subscribe: {
-      type: 'array',
-    },
-    pubsub: {
-      type: 'array',
-    },
+    topic: {
+      type: 'string',
+      size: 100
+    }
   }
 };

@@ -2,6 +2,80 @@
 
 A REST API for managing EMQ Users and ACL Rules, built with [Sails.js](http://sailsjs.org) (for multiple database support)
 
+# Endpoints
+
+Supported all default [blueprints](http://sailsjs.com/documentation/reference/blueprint-api)
+
+### EMQ-USER
+
+- `POST` - `/emq-user`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+  - DATA
+    - emq-user `username`
+    - emq-user `password`
+    - is_superuser
+- `GET (all)` - `/emq-user`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `GET (one)` -  `/emq-user/:<id>`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `DELETE (one)` - `/emq-user/:<id>`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `PUT (one)` - `/emq-user/:<id>`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+  - DATA
+    - emq-user `username`
+    - emq-user `password`
+    - is_superuser
+
+- ... and other that are less common and basically not used
+
+### EMQ_ACL
+
+- `POST` - `/emq-acl`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+  - DATA
+    - `allow` - integer
+    - `ipaddr` - string
+    - `username` - string
+    - `clientid` - string
+    - `access` - integer
+    - `topic` - string
+- `GET (all)` - `/emq-acl`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `GET one` - `/emq-acl`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `DELETE (one)` - `/emq-acl/:<id>`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+- `PUT (one)` - `/emq-acl/:<id>`
+  - AUTH (Basic)
+    - admin `username`
+    - admin `password`
+  - DATA
+    - `allow` - integer
+    - `ipaddr` - string
+    - `username` - string
+    - `clientid` - string
+    - `access` - integer
+    - `topic` - string
+
 # Development
 To set up a local development environment, make sure you have Sails installed globally (`npm install -g sailsjs`). Then:
 

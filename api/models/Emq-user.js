@@ -14,7 +14,7 @@ module.exports = {
     password: {
       type: 'string',
     },
-    is_admin: {
+    is_superuser: {
       type: 'boolean',
     }
   }

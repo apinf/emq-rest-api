@@ -16,6 +16,10 @@ module.exports = {
     },
     is_superuser: {
       type: 'boolean',
+      defaultsTo: false
+    },
+    salt: {
+      type: 'string'
     }
   }
 };

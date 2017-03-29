@@ -1,8 +1,8 @@
 {
-  "name": "emq-rest-api-sails",
+  "name": "emq-rest-api",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "REST API for EMQTTD",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",

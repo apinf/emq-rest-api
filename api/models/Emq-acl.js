@@ -20,7 +20,7 @@ module.exports = {
     },
     clientId: {
       type: 'string',
-      size: 100
+      size: 1024
     },
     access: {
       type: 'integer'

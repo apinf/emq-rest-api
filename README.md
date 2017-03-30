@@ -56,7 +56,7 @@ Supported all default [blueprints](http://sailsjs.com/documentation/reference/bl
   - AUTH (Basic)
     - admin `username`
     - admin `password`
-- `GET one` - `/emq-acl`
+- `GET (one)` - `/emq-acl/:<id>`
   - AUTH (Basic)
     - admin `username`
     - admin `password`

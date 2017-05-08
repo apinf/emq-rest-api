@@ -7,6 +7,9 @@
 
 module.exports = {
   attributes: {
+    id: {
+      type: 'string',
+    },
     allow: {
       type: 'integer',
     },
@@ -18,7 +21,7 @@ module.exports = {
       type: 'string',
       size: 100
     },
-    clientId: {
+    clientid: {
       type: 'string',
       size: 1024
     },
@@ -28,6 +31,10 @@ module.exports = {
     topic: {
       type: 'string',
       size: 100
-    }
+    },
+		proxyId: {
+			type: 'string',
+			size: 100
+		}
   }
 };
